@@ -21,7 +21,7 @@ for (var i = 0 ; i <= name.length; i++){
 
 // For Each Loop 
 var friends = ["Ram","Shyam", "Sidd", "Tushar"];
-friends.forEach((Item,Index) => { //Ccallback
+friends.forEach((Item,Index) => { //Callback
     console.log(Index,Item); //Function Performed
 }); // Item And Index
 
