@@ -1,0 +1,179 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 2vw;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 2vw;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2vw;
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.2vw;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #007bff;
+}
+
+.username {
+  font-size: 1.2vw;
+  color: #007bff;
+}
+
+/* Hero Section Styling */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 90vh;
+  padding: 2vw;
+}
+
+.hero-text {
+  max-width: 40%;
+}
+
+.hero-text h1 {
+  font-size: 2.5vw;
+  margin-bottom: 1vh;
+}
+
+.hero-text .highlight {
+  color: #007bff;
+}
+
+.hero-text p {
+  font-size: 1.2vw;
+  margin-bottom: 2vh;
+}
+
+.hero-text button {
+  padding: 1vw 2vw;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2vw;
+  cursor: pointer;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Media Queries */
+
+/* Tablet View */
+@media (max-width: 768px) {
+  /* Navbar */
+  .logo {
+      font-size: 1.8vw;
+  }
+
+  .nav-links li a, .username {
+      font-size: 1vw;
+  }
+
+  /* Hero Section */
+  .hero-section {
+      flex-direction: row;
+      text-align: center;
+      height: auto;
+  }
+
+  .hero-text {
+      max-width: 90%;
+  }
+
+  .hero-text h1 {
+      font-size: 2vw;
+  }
+
+  .hero-text p {
+      font-size: 1vw;
+  }
+
+  .hero-text button {
+      font-size: 1vw;
+      padding: 1vh 2vw;
+  }
+
+  .hero-image img {
+      max-width: 70%;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+  /* Navbar */
+  .nav-links {
+      display: none;
+  }
+
+  .logo {
+      font-size: 5vw;
+  }
+
+  .username {
+      font-size: 4vw;
+  }
+
+  /* Hero Section */
+  .hero-section {
+      flex-direction: column;
+      padding: 2vw;
+  }
+
+  .hero-text h1 {
+      font-size: 3.5vw;
+  }
+
+  .hero-text p {
+      font-size: 2vw;
+  }
+
+  .hero-text button {
+      font-size: 2vw;
+      padding: 2vh 3vw;
+  }
+
+  .hero-image img {
+      max-width: 90%;
+  }
+}
